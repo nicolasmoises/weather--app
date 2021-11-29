@@ -1,5 +1,6 @@
 import React from 'react';
 import CardTemp from './CardTemp';
+
 export default function Card({max, min, name, img, onClose}) {
   // acá va tu código
   function handleOnClose () {
