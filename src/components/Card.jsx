@@ -1,6 +1,6 @@
 import React from 'react';
 import CardTemp from './CardTemp';
-
+import propTypes from 'prop-types'
 export default function Card({max, min, name, img, onClose}) {
   // acá va tu código
   function handleOnClose () {
@@ -18,6 +18,15 @@ export default function Card({max, min, name, img, onClose}) {
       </div>
   )
 }; 
+
+
+Card.propTypes =  {
+max: propTypes.number,
+min: propTypes.number,
+img: propTypes.string,
+mame: propTypes.string,
+onClose: propTypes.func,
+};
 
 {/* <div>
         <label>Min</label>
