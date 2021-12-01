@@ -1,5 +1,6 @@
 import React from 'react';
-
+import s from './SearchBar.module.css';
+import {IoSearchCircle} from 'react-icons/io5';
 export default function SearchBar({onSearch}) {
   // acá va tu código
   function handlerOnsearch () {
@@ -8,8 +9,8 @@ export default function SearchBar({onSearch}) {
       onSearch(input.value)
     }
   }
-  return <div>
+  return <div className={s.searchBar}>
     <input id= 'search-bar-input' type="text" placeholder= 'Ciudad...' />
-    <button onClick= {handlerOnsearch}>Agregar</button>
+    <button onClick= {handlerOnsearch}> <IoSearchCircle/> </button>
   </div>
 };
