@@ -29,11 +29,11 @@ mame: propTypes.string,
 onClose: propTypes.func,
 };
 
-{/* <div>
+/* <div>
         <label>Min</label>
         <span>{min}</span>
       </div>
       <div>
         <label>Max</label>
         <span>{max}</span> 
-        <div> */}
+        <div> */
